@@ -1,0 +1,5 @@
+name: Conversation History
+description: Includes the prior chat conversations from other agents into the current context
+context: sys.chat.history
+
+#!/usr/bin/env python3.12 ${GPTSCRIPT_TOOL_DIR}/history.py
