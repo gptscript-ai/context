@@ -24,4 +24,5 @@ for file in files:
         print(f'  {file}/')
     else:
         print(f'  {file}')
+print("Always use absolute paths to interact with files in the workspace")
 print()
