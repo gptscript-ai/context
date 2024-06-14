@@ -1,0 +1,5 @@
+export tools: sys.read, sys.write, sys.ls
+
+#!sys.echo
+
+You have access to the local filesystem
