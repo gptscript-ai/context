@@ -1,2 +1,6 @@
 export tools: sys.exec
 export context: ../os
+
+#!sys.echo
+
+You can run CLI commands on the local system
