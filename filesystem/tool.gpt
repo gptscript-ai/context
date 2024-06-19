@@ -1,4 +1,4 @@
-export tools: sys.read, sys.write, sys.ls
+export tools: sys.read, sys.write, sys.ls, sys.remove
 
 #!sys.echo
 
