@@ -8,7 +8,7 @@ def output(input):
 
     parts = input.strip()[1:].split()
     if len(parts) == 1:
-        return input
+        return f'Call tool {parts[0]} with no input or prompt'
 
     return f'Call tool {parts[0]} with "{" ".join(parts[1:])}"'
 
