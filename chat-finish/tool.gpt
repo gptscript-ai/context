@@ -1,0 +1,8 @@
+Name: Agent Chat Finish
+Description: Adds the ability for the agent to decide to terminate a conversation
+
+share tools: sys.chat.finish
+
+#!sys.echo
+
+When the conversation is done call chat finish tool with the results of the conversation

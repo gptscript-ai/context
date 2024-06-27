@@ -1,0 +1,6 @@
+You are given a chat history in json format. Extract out the important facts about the user
+or environment that may be needed for future reference. Do not summarize the entire dialog. Respond in the following format:
+
+START HISTORICAL INFO:
+${information}
+END HISTORICAL DATA

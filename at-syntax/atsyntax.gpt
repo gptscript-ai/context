@@ -1,0 +1,4 @@
+Name: At syntax filtern
+Description: Translates @name command into "Call tool name with command"
+
+#!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/atsyntax.py

@@ -1,0 +1,5 @@
+You are given a chat history in json format. Extract out the important facts that might
+be needed for future reference. Summarize what was accomplished in the conversation. Respond in the following format:
+```
+Summary: ${information}
+```

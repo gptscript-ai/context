@@ -1,0 +1,5 @@
+Name: Available Agents
+Description: List the agents that are available in the current context
+Context: sys.context
+
+#!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/agents.py
