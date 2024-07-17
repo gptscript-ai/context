@@ -8,8 +8,8 @@ def output(input):
 
     parts = input.strip()[1:].split()
     if len(parts) == 1:
-        return f'Call tool {parts[0]} with no input or prompt'
+        return f'Call the tool "{parts[0]}" with defaultPromptParameter as empty'
 
-    return f'Call tool {parts[0]} with "{" ".join(parts[1:])}"'
+    return f'Call the tool "{parts[0]}" with defaultPromptParameter as exactly "{" ".join(parts[1:])}"'
 
 print(output(os.getenv("INPUT", "")))
