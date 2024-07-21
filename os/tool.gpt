@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
+Name: OS Context
+Description: Prints the current operation system based on uname conventions
 
-import os
-import platform
-
-print(f'The local operating systems is {platform.system()}, release {platform.release()}')
+#!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/tool.py

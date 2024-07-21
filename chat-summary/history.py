@@ -3,8 +3,6 @@
 import json
 import os
 import asyncio
-from gptscript.gptscript import GPTScript
-from gptscript.gptscript import Options
 
 
 SCRIPT = os.getenv('GPTSCRIPT_TOOL_DIR', '.') + '/summarize.gpt'
@@ -25,6 +23,8 @@ async def main():
                 })
 
     if len(chat) > 1:
+        from gptscript.gptscript import GPTScript
+        from gptscript.gptscript import Options
         g = GPTScript()
         result = g.run(SCRIPT, opts=Options(input=json.dumps(chat)))
         print(await result.text())
