@@ -6,6 +6,9 @@ dir = os.environ.get('GPTSCRIPT_WORKSPACE_DIR', '')
 if not os.path.isdir(dir):
     sys.exit(0)
 
+cwd = os.getcwd()
+print(f'The current working directory is: "{cwd}"')
+
 print(f'The workspace directory is "{dir}". Use "{dir}" to create new files or directories.')
 
 files = os.listdir(dir)
