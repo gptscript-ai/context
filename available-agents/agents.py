@@ -2,9 +2,9 @@
 
 import json
 import sys
-import os
+from gptscript import get_env
 
-context = json.loads(os.environ.get('GPTSCRIPT_CONTEXT', '{}'))
+context = json.loads(get_env('GPTSCRIPT_CONTEXT', '{}'))
 chat = []
 
 call = context.get('call', {})

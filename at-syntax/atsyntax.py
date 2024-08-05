@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-import os
+from gptscript import get_env
+
 
 def output(input):
     if not input.lstrip().startswith("@"):
@@ -12,4 +13,5 @@ def output(input):
 
     return f'Call the tool "{parts[0]}" with defaultPromptParameter as exactly "{" ".join(parts[1:])}"'
 
-print(output(os.getenv("INPUT", "")))
+
+print(output(get_env("INPUT")))

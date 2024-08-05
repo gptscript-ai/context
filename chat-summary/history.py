@@ -1,15 +1,15 @@
 #!/usr/bin/env python3.12
 
 import json
-import os
 import asyncio
+from gptscript import get_env
 
 
-SCRIPT = os.getenv('GPTSCRIPT_TOOL_DIR', '.') + '/summarize.gpt'
+SCRIPT = get_env('GPTSCRIPT_TOOL_DIR', '.') + '/summarize.gpt'
 
 
 async def main():
-    histories = json.loads(os.environ.get('GPTSCRIPT_CONTEXT', '{}'))
+    histories = json.loads(get_env('GPTSCRIPT_CONTEXT', '{}'))
     chat = []
 
     for history in histories.get('history', []):

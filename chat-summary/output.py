@@ -1,18 +1,20 @@
 #!/usr/bin/env python3.12
 
 import json
-import os
 import asyncio
+import os
+
+from gptscript import get_env
 
 
-SCRIPT = os.getenv('GPTSCRIPT_TOOL_DIR', '.') + '/output.gpt'
+SCRIPT = get_env('GPTSCRIPT_TOOL_DIR', '.') + '/output.gpt'
 
 
 async def main():
-    output = os.environ.get('OUTPUT', '')
-    continuation = os.environ.get('CONTINUATION', '') == 'true'
-    is_chat = os.environ.get('CHAT', '') == 'true'
-    call = json.loads(os.environ.get('GPTSCRIPT_CONTEXT', '{}'))
+    output = get_env('OUTPUT', '')
+    continuation = get_env('CONTINUATION', '') == 'true'
+    is_chat = get_env('CHAT', '') == 'true'
+    call = json.loads(get_env('GPTSCRIPT_CONTEXT', '{}'))
     chat = []
 
     for message in call.get('completion', {}).get('messages', []):
