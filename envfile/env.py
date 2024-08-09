@@ -64,7 +64,7 @@ def main():
         "key",
         type=str,
         help="Key of the environment variable to get",
-        default=os.getenv("key"),
+        default=os.getenv("KEY"),
         nargs="?",
     )
 
@@ -76,11 +76,11 @@ def main():
         "key",
         type=str,
         help="Key of the environment variable",
-        default=os.getenv("key"),
+        default=os.getenv("KEY"),
         nargs="?",
     )
     parser_set.add_argument(
-        "value", type=str, help="Value to set", default=os.getenv("value"), nargs="?"
+        "value", type=str, help="Value to set", default=os.getenv("VALUE"), nargs="?"
     )
 
     # Subcommand 'remove'
@@ -91,7 +91,7 @@ def main():
         "key",
         type=str,
         help="Key of the environment variable to remove",
-        default=os.getenv("key"),
+        default=os.getenv("KEY"),
         nargs="?",
     )
 

@@ -7,4 +7,4 @@ Args: action: get, set, remove an environment variable
 Args: key: name of the environment variable
 Args: value: value to store in the environment variable key
 
-#!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/env.py ${action}
+#!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/env.py ${ACTION}
