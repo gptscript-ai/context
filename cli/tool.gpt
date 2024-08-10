@@ -1,5 +1,6 @@
-name: CLI Capabilities
+Name: CLI Capabilities
 Description: Adds the ability to run local CLI commands on the system
+Type: context
 
 export tools: sys.exec
 export context: ../os

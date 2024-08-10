@@ -1,5 +1,6 @@
 Name: Agent Chat Finish
 Description: Adds the ability for the agent to decide to terminate a conversation
+Type: context
 
 share tools: sys.chat.finish
 

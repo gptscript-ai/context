@@ -1,5 +1,6 @@
 Name: environment manager
 Share Tools: env
+Type: context
 ---
 Name: env
 Description: Manage the runtime environment variables

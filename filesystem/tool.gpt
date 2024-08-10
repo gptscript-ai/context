@@ -1,4 +1,5 @@
-export tools: sys.read, sys.write, sys.ls, sys.remove
+Export Tools: sys.read, sys.write, sys.ls, sys.remove
+Type: context
 
 #!sys.echo
 

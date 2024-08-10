@@ -1,15 +1,16 @@
-name: Agent Chat History Summarizer
-description: Summarizes the previous chat conversations when entering a new agent and summarizes the agent conversion when finishing the chat
-context: sys.chat.history
-share output filter: chatFinishSummary
+Name: Agent Chat History Summarizer
+Description: Summarizes the previous chat conversations when entering a new agent and summarizes the agent conversion when finishing the chat
+Context: sys.chat.history
+Share Output Filter: chatFinishSummary
+Type: context
 
 #!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/history.py
 
 ---
-name: chatFinishSummary
-context: sys.chat.current
-params: output: the message
-params: continuation: if the the conversation is still in progress
-params: chat: if this is a chat conversation
+Name: chatFinishSummary
+Context: sys.chat.current
+Params: output: the message
+Params: continuation: if the the conversation is still in progress
+Params: chat: if this is a chat conversation
 
 #!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/output.py

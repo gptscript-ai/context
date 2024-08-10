@@ -1,5 +1,6 @@
-name: Workspace Context
-description: Adds the workspace and tools needed to access the workspace to the current context
-export: sys.read, sys.ls, sys.write, sys.remove
+Name: Workspace Context
+Description: Adds the workspace and tools needed to access the workspace to the current context
+Export: sys.read, sys.ls, sys.write, sys.remove
+Type: context
 
 #!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/workspace.py
