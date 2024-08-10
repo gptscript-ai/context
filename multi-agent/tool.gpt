@@ -1,7 +1,8 @@
 Name: Multi Agent Support
 Description: Adds some helpers to make multi agent interactions more seemless
+Type: context
 
-share context: ../chat-summary
-share context: ../chat-finish
-share context: ../available-agents
-share context: ../at-syntax
+Share Context: ../chat-summary
+Share Context: ../chat-finish
+Share Context: ../available-agents
+Share Context: ../at-syntax

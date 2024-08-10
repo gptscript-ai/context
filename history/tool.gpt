@@ -1,5 +1,6 @@
-name: Conversation History
-description: Includes the prior chat conversations from other agents into the current context
-context: sys.chat.history
+Name: Conversation History
+Description: Includes the prior chat conversations from other agents into the current context
+Context: sys.chat.history
+Type: context
 
 #!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/history.py

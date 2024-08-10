@@ -1,4 +1,5 @@
 Name: OS Context
 Description: Prints the current operation system based on uname conventions
+Type: context
 
 #!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/tool.py

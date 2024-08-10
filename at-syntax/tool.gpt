@@ -1,4 +1,5 @@
 Name: At syntax
 Description: Add the ability for users to use at (@) to direct message an agent
+Type: context
 
-share input filter: ./atsyntax.gpt
+Share Input Filter: ./atsyntax.gpt

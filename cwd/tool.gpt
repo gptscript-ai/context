@@ -1,5 +1,6 @@
-name: Current Working Directory Context
-description: Adds the ability to interact with the current working directory
-export: sys.read, sys.ls, sys.write, sys.remove
+Name: Current Working Directory Context
+Description: Adds the ability to interact with the current working directory
+Export: sys.read, sys.ls, sys.write, sys.remove
+Type: context
 
 #!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/cwd.py
