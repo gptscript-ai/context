@@ -1,0 +1,8 @@
+Name: Current Date and Time
+Description: The current date and time for the user.
+Type: context
+
+#!python3
+from datetime import datetime
+
+print("The current date and time is ", datetime.now())
